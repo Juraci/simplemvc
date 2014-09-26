@@ -1,4 +1,5 @@
 require "simplemvc/version"
+require "simplemvc/controller"
 
 module Simplemvc
   class Application

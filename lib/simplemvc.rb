@@ -19,7 +19,7 @@ module Simplemvc
 
     def get_controller_and_action(env)
       controller_name, action = get_page_and_action env["PATH_INFO"]
-      controller_name = controller_name.capitalize + "Controller"
+      controller_name = controller_name.to_camel_case + "Controller"
       [Object.const_get(controller_name), action]
     end
 
